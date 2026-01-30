@@ -6,11 +6,11 @@
 
 Production-grade portfolio website deployment on AWS, showcasing the evolution from basic S3 static hosting to enterprise CloudFront CDN infrastructure.
 
-🔗 **Live Site:** [https://ddj6jvqxzj0e2.cloudfront.net](https://ddj6jvqxzj0e2.cloudfront.net)
+**Live Site:** [https://ddj6jvqxzj0e2.cloudfront.net](https://ddj6jvqxzj0e2.cloudfront.net)
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 This project documents the deployment and infrastructure evolution of my portfolio website, demonstrating cloud architecture best practices and AWS service integration.
 
@@ -22,7 +22,7 @@ This project documents the deployment and infrastructure evolution of my portfol
 - HTTP-only access
 - Direct S3 URL exposure
 
-**Phase 2: Production CloudFront Distribution** ⭐ *Current*
+**Phase 2: Production CloudFront Distribution** *Current*
 - CloudFront CDN with global edge locations
 - HTTPS/TLS encryption
 - Origin Access Control (OAC) for S3 security
@@ -32,7 +32,7 @@ This project documents the deployment and infrastructure evolution of my portfol
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Current Production Architecture
 
@@ -54,14 +54,14 @@ S3 Bucket (Private - thato-portfolio-website)
 ### Security Model
 
 ```
-Internet → CloudFront (HTTPS) ✅
-CloudFront → S3 (OAC authorized) ✅
-Internet → S3 Direct ❌ (403 Forbidden - by design)
+Internet → CloudFront (HTTPS) 
+CloudFront → S3 (OAC authorized) 
+Internet → S3 Direct (403 Forbidden - by design)
 ```
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **AWS S3** - Object storage for static files
 - **AWS CloudFront** - Content Delivery Network
@@ -72,30 +72,30 @@ Internet → S3 Direct ❌ (403 Forbidden - by design)
 
 ---
 
-## 📊 Key Features
+## Key Features
 
 ### Performance
-- ⚡ Global CDN with 40+ edge locations
-- 🚀 Reduced latency via edge caching
-- 📦 Gzip/Brotli compression
-- 💾 Browser caching optimization
+- Global CDN with 40+ edge locations
+- Reduced latency via edge caching
+- Gzip/Brotli compression
+- Browser caching optimization
 
 ### Security
-- 🔒 HTTPS/TLS 1.2+ encryption
-- 🛡️ Origin Access Control (OAC)
-- 🔐 Private S3 bucket
-- 🚫 No direct S3 access (403 by design)
-- 🔑 IAM least-privilege policies
+- HTTPS/TLS 1.2+ encryption
+- Origin Access Control (OAC)
+- Private S3 bucket
+- No direct S3 access (403 by design)
+- IAM least-privilege policies
 
 ### Reliability
-- 🌍 Multi-region edge distribution
-- ⚙️ CloudFront automatic failover
-- 📈 99.9% SLA uptime
-- 🔄 Cache invalidation for updates
+- Multi-region edge distribution
+- CloudFront automatic failover
+- 99.9% SLA uptime
+- Cache invalidation for updates
 
 ---
 
-## 🚀 Deployment Process
+## Deployment Process
 
 ### Initial S3 Setup
 ```bash
@@ -128,7 +128,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 📈 What I Learned
+## What I Learned
 
 ### AWS Services
 - S3 static website hosting vs CloudFront distribution
@@ -152,7 +152,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 💰 Cost Analysis
+## Cost Analysis
 
 ### Monthly Costs (Estimated)
 - **S3 Storage:** ~$0.50 (for 20GB)
@@ -167,7 +167,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 🔄 Update Workflow
+## Update Workflow
 
 ```bash
 # 1. Update local files
@@ -187,7 +187,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 📝 Configuration Files
+## Configuration Files
 
 ### S3 Bucket Policy (CloudFront OAC Access)
 ```json
@@ -214,7 +214,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - [ ] Custom domain name (Route 53)
 - [ ] SSL certificate for custom domain
@@ -226,7 +226,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 📚 Resources & References
+## Resources & References
 
 - [AWS S3 Static Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
 - [CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/)
@@ -235,7 +235,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Thato Rapholo**
 - Portfolio: [https://ddj6jvqxzj0e2.cloudfront.net](https://ddj6jvqxzj0e2.cloudfront.net)
@@ -246,10 +246,10 @@ aws cloudfront create-invalidation \
 
 ## 📄 License
 
-This project documentation is open source and available under the MIT License.
+This project is for educational purposes.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built as part of CAPACITI's Cloud & DevOps training program, following AWS best practices and the Well-Architected Framework.
