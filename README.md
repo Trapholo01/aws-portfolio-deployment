@@ -36,20 +36,7 @@ This project documents the deployment and infrastructure evolution of my portfol
 
 ### Current Production Architecture
 
-```
-User Request (HTTPS)
-    ↓
-CloudFront Distribution (ddj6jvqxzj0e2.cloudfront.net)
-├─ Global Edge Locations (40+ worldwide)
-├─ SSL/TLS Certificate (AWS Certificate Manager)
-├─ Cache Policies (optimized for static content)
-└─ Origin Access Control (OAC)
-    ↓
-S3 Bucket (Private - thato-portfolio-website)
-├─ Bucket Policy (CloudFront-only access)
-├─ Static Website Files (HTML, CSS, JS, images)
-└─ No public access (403 on direct URLs)
-```
+![Architecture](diagrams/CloudFront + Private S3 Static Website Architecture.drawio.png)
 
 ### Security Model
 
