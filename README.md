@@ -36,7 +36,7 @@ This project documents the deployment and infrastructure evolution of my portfol
 
 ### Current Production Architecture
 
-![Architecture](diagrams/CloudFront + Private S3 Static Website Architecture.drawio.png)
+![Architecture](https://github.com/Trapholo01/aws-portfolio-deployment/blob/03dd267dc815fbf78b45277e6e989bfd7da8c3cf/diagrams/CloudFront%20%2B%20Private%20S3%20Static%20Website%20Architecture.drawio.png)
 
 ### Security Model
 
