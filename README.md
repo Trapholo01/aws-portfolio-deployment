@@ -40,11 +40,7 @@ This project documents the deployment and infrastructure evolution of my portfol
 
 ### Security Model
 
-```
-Internet → CloudFront (HTTPS) 
-CloudFront → S3 (OAC authorized) 
-Internet → S3 Direct (403 Forbidden - by design)
-```
+![Security Model](https://github.com/Trapholo01/aws-portfolio-deployment/blob/6f71dd2a960311dabd1fc4d810c990355f02ff2b/diagrams/Security%20Workflow%20Architecture.png)
 
 ---
 
